@@ -2,7 +2,7 @@
 // needs a varible for: timer, quetion objects, numers or correct, number of wrong, correct answer, arry of questions to skip through, missed questions.
 let timeForQuestion = 15;
 let totalTime = 0;
-let numberofQuestions = 0;
+let numberOfQuestions = 0;
 let numberOfCorrect = 0;
 let numberOfWrong = 0;
 let numberOfUnanswered = 0;
@@ -60,7 +60,7 @@ let questionArry = [questionOne, questionTwo, questionThree, questionFour];
 
 //makes a function to show the current question
 let questionShowing = (q) => {
-	
+
 	currentQuestion = q;
 	//sets the question timer
 	timeForQuestion = 15;
@@ -91,27 +91,29 @@ let checkAnswer = (currentAnswer) => {
 	if (currentAnswer === currentQuestion.answer){
 
 		numberOfCorrect++;
-		numberofQuestions++;
+		numberOfQuestions++;
 		currentQuestionArry++;
+		$(".questions").empty();
 		$(".choices").empty();
 		$(".timer").empty();
 		clearInterval(counter);
 		confirm("You got it right!");
-		questionShowing(questionArry[currentQuestionArry]);
 		done();
+		questionShowing(questionArry[currentQuestionArry]);
 	}
 
 	else {
 
 		numberOfWrong++;
-		numberofQuestions++;
+		numberOfQuestions++;
 		currentQuestionArry++;
+		$(".questions").empty();
 		$(".choices").empty();
 		$(".timer").empty();
 		clearInterval(counter);
 		confirm("You got it wrong!");
-		questionShowing(questionArry[currentQuestionArry]);
 		done();
+		questionShowing(questionArry[currentQuestionArry]);
 
 	};
 };
@@ -120,24 +122,32 @@ let checkAnswer = (currentAnswer) => {
 let timer = () => {
 
 	timeForQuestion--;
+	
 	$('.timer').html("<p>Time remaining: " + timeForQuestion + "</p>")
 
 	if (timeForQuestion === 0) {
-
+		currentQuestionArry++;
 		numberOfUnanswered++;
+		numberOfQuestions++;
 		clearInterval(counter);
+		done();
 
 	};
 };
 
 let done = () => {
-	if (numberofQuestions === (questionArry.length)){		
+	if(numberOfQuestions >= questionArry.length){
+		$(".questions").empty();
+		$(".choices").empty();
+		$(".timer").remove();
 		$('.questions').append("<h1>Results</h1>");
-		$('.choices').append("<h3>Number of Correct Answers: " + numberOfCorrect + "</h3>" );
-		$('.choices').append("<h3>Number of Wrong Answers: " + numberOfWrong + "</h3>" );
-		$('.choices').append("<h3>Number of Unanswered Questions: " + numberOfUnanswered + "</h3>" );
-	};
+		$('.results').append("<h3>Number of Correct Answers: " + numberOfCorrect + "</h3>" );
+		$('.results').append("<h3>Number of Wrong Answers: " + numberOfWrong + "</h3>" );
+		$('.results').append("<h3>Number of Unanswered Questions: " + numberOfUnanswered + "</h3>" );
+	}
 };
+
+
 
 $(document).ready(function(){
 

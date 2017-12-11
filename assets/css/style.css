@@ -10,25 +10,34 @@ body{
 .header{
 	margin: auto;
 	background-color: grey;
-	color: green;
+	color: white;
 
 }
 .questions{
 
 	margin: auto;
 	background-color: grey;
-	color: green;
+	color: white;
 }
 .choices{
 
 	margin: auto;
 	background-color: grey;
-	color: green;
+	color: white;
 }
 
+.choice:hover{
+	color: red;
+}
 .timer{
 
 	margin: auto;
 	background-color: grey;
-	color: green;
+	color: white;
+}
+.results{
+
+	margin: auto;
+	background-color: grey;
+	color: white;
 }
