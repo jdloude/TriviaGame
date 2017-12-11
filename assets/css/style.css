@@ -1,0 +1,34 @@
+body{
+	width: 100%;
+	height: 100%;
+	background: no-repeat fixed center;
+	background-image: url("../images/background.jpg");
+	text-align: center;
+
+}
+
+.header{
+	margin: auto;
+	background-color: grey;
+	color: green;
+
+}
+.questions{
+
+	margin: auto;
+	background-color: grey;
+	color: green;
+}
+.choices{
+
+	margin: auto;
+	background-color: grey;
+	color: green;
+}
+
+.timer{
+
+	margin: auto;
+	background-color: grey;
+	color: green;
+}
