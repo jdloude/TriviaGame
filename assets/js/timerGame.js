@@ -13,45 +13,45 @@ let correctAnswer;
 
 let questionOne = {
 
-	question: "who did this?",
-	optionOne: "Not me.",
-	optionTwo: "Maybe me.",
-	optionThree: "Nobody.",
-	optionFour: "God.",
-	answer: "God."
+	question: "who is the Full metal Alchemist?",
+	optionOne: "Roy Mustang",
+	optionTwo: " Alex Louis Armstrong",
+	optionThree: "Edward Elric",
+	optionFour: " Alphonse Elric",
+	answer: "Edward Elric"
 
 }
 
 let questionTwo = {
 
-	question: "This is question 2?",
-	optionOne: "Not me.",
-	optionTwo: "Maybe me.",
-	optionThree: "Nobody.",
-	optionFour: "God.",
-	answer: "Nobody."
+	question: "who was Spikes love in Cowboy Bepop?",
+	optionOne: "Faye",
+	optionTwo: "Julia",
+	optionThree: "Ein",
+	optionFour: "Edward",
+	answer: "Julia"
 
 }
 
 let questionThree = {
 
-	question: "This is question 3?",
-	optionOne: "Not me.",
-	optionTwo: "some guy...",
-	optionThree: "Nobody.",
-	optionFour: "God.",
-	answer: "some guy..."
+	question: "Who is Lelouch's closet related sister in Code Geass?",
+	optionOne: "Cornelia",
+	optionTwo: "Nunnally",
+	optionThree: "C.C.",
+	optionFour: "Kallen",
+	answer: "Nunnally"
 
 }
 
 let questionFour = {
 
-	question: "This is question 4?",
-	optionOne: "Not me.",
-	optionTwo: "some guy...",
-	optionThree: "Nobody.",
-	optionFour: "God.",
-	answer: "Not me"
+	question: "What game did team blank play in No Game No Life to enter an alternate universe?",
+	optionOne: "Checkers",
+	optionTwo: "Poker",
+	optionThree: "A MMORPG",
+	optionFour: "Chess",
+	answer: "Chess"
 
 }
 
