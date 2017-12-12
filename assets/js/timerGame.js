@@ -242,7 +242,7 @@ let done = () => {
 		$('.results').append("<h3>Number of Wrong Answers: " + numberOfWrong + "</h3>" );
 		$('.results').append("<h3>Number of Unanswered Questions: " + numberOfUnanswered + "</h3>" );
 
-		timeToReload = 11;
+		timeToReload = 10;
 
 		//sets up the reloadT set to 1 second
 		reloadT = setInterval(reloadTime, 1000);
